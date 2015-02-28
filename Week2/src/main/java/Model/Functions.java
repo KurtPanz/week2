@@ -11,6 +11,10 @@ package Model;
  * @author Kurt
  */
 public class Functions {
+    
+    public Functions ()
+            {
+            }
        
     public static int sum(int a,int b)
     {
@@ -61,6 +65,22 @@ public class Functions {
     {
         return "yes";
     }
-              
+          
+     
+   
+       public static int divide(int a,int b)
+    {
+        return a / b;
+    }
+       
+    public static int multiply(int a,int b)
+    {
+        return a * b;
+    }
+    
+    public static int subtract(int a,int b)
+    {
+        return a - b;
+    }
     
 }

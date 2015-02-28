@@ -17,11 +17,7 @@ import org.junit.Test;
 import org.junit.*;
 import org.junit.Ignore;
 import static org.junit.Assert.*;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertNotNull;
-import static org.testng.Assert.assertNull;
-import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.fail;
+
 
 /**
  *
