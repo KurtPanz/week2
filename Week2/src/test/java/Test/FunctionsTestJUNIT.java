@@ -14,6 +14,8 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.*;
+import org.junit.Ignore;
 import static org.junit.Assert.*;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotNull;
@@ -87,15 +89,15 @@ public class FunctionsTestJUNIT {
     @org.testng.annotations.Test
     public void testTruth()
     {//v.truth test
-        boolean truth = false;
-        String bread = "soft";
-        
-        if(bread.toLowerCase() == "soft")
-        {
-            truth = true;
-        }
+//        boolean truth = false;
+//        String bread = "soft";
+//        
+//        if(bread.toLowerCase() == "soft")
+//        {
+//            truth = true;
+//        }
                 
-       assertTrue(truth);
+       assertTrue(Functions.truth("soft"));
        assertTrue(5 < 6);
         
     }
@@ -103,15 +105,15 @@ public class FunctionsTestJUNIT {
     @org.testng.annotations.Test
     public void falseTest()
     {//vi.false test
-        boolean truth = true;
-        String bread = "hard";
-        
-        if(bread.toLowerCase() == "hard")
-        {
-            truth = false;
-        }
-                
-       assertFalse(truth);
+//        boolean truth = true;
+//        String bread = "hard";
+//        
+//        if(bread.toLowerCase() == "hard")
+//        {
+//            truth = false;
+//        }
+//                
+       assertFalse(Functions.NotTruth("hard"));
        assertFalse(10 < 5);
         
     }
@@ -143,16 +145,17 @@ public class FunctionsTestJUNIT {
         
     }
     
-    @org.testng.annotations.Test//(timeout=100)
+    @Test(timeout=1000)
     public void testTimeout()
     {//x.exceptionsTimeout test
        
-        int counter = 120;
-        while(counter != 0)
-        {
-            counter--;
-            System.out.println(counter);
-        }
+//        int counter = 120;
+//        while(counter != 0)
+//        {
+//            counter--;
+//            System.out.println(counter);
+//        }
+        while(true);
     }
     
     @org.testng.annotations.Test(enabled = false)

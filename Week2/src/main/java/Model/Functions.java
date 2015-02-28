@@ -23,6 +23,36 @@ public class Functions {
     {//i.floating point test
         return a - b;        
     }
+    
+    public static boolean truth(String breads)
+    {//boolean
+               
+        String bread = breads;
+        
+        if(bread.toLowerCase() == "soft")
+        {
+             return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+     public static boolean NotTruth(String breads)
+    {//boolean
+               
+        String bread = breads;
+        
+        if(bread.toLowerCase() == "hard")
+        {
+             return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
    
     
 }
