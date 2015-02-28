@@ -11,9 +11,7 @@ package Model;
  * @author Kurt
  */
 public class Functions {
-    
-    
-    
+       
     public static int sum(int a,int b)
     {
         return a + b;
@@ -53,6 +51,16 @@ public class Functions {
             return true;
         }
     }
-   
+     
+    public static String ObjectA()
+    {
+        return "yes";
+    }
+    
+     public static String ObjectB()
+    {
+        return "yes";
+    }
+              
     
 }

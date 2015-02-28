@@ -72,18 +72,17 @@ public class FunctionsTestJUNIT {
     }    
        
     
-    @org.testng.annotations.Test(enabled = false)
+    @org.testng.annotations.Test
     public void testObjectEquality()
     {//iii.object equality test
-      
-        
+        assertEquals(Functions.ObjectA(),Functions.ObjectB());
     }
     
-    @org.testng.annotations.Test(enabled = false)
+    @org.testng.annotations.Test
     public void objectIdentity()
     {//iv.object identity test
      
-        
+        assertTrue(Functions.ObjectA().contains(Functions.ObjectA()));
     }
     
     @org.testng.annotations.Test
@@ -145,11 +144,11 @@ public class FunctionsTestJUNIT {
         
     }
     
-    @Test(timeout=1000)
+    @org.testng.annotations.Test(timeOut=100)
     public void testTimeout()
     {//x.exceptionsTimeout test
        
-//        int counter = 120;
+//        int counter = 20000;
 //        while(counter != 0)
 //        {
 //            counter--;
